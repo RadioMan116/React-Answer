@@ -1,0 +1,68 @@
+.QuizElem {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	flex-grow: 1;
+	width: 100%;
+	background: linear-gradient(90deg, #5041b2 0%, #7966e6 100%);
+	height: 100%;
+}
+
+.QuizElem h1 {
+	color: #fff;
+	margin-left: 10px;
+}
+
+.layoutElem {
+	height: 100vh;
+}
+
+.ActiveQuiz {
+	padding: 20px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	margin: 0 10px;
+	box-sizing: border-box;
+}
+
+.QuizWrapper {
+	width: 600px;
+}
+
+.Question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.AnswerList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.AnswerItem {
+	border: 1px solid white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	color: white
+}
+
+.AnswerItem:hover {
+	background: rgba(255, 255, 255, .2);
+	transition: background .3s;
+}
+
+.AnswerItem.success {
+	background: rgba(161,240,69, .7);
+}
+
+.AnswerItem.error {
+	background: rgba(240,87, 108, .7);
+}
